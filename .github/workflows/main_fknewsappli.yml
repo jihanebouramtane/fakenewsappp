@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - faakenewwwsss
+name: Build and deploy Python app to Azure Web App - fknewsappli
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0BAA5FA60F8D4DA5989AD5A12CBC7270 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_E3B5F77FF79248E2BCDBDFCD49715153 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DC57BFE052E8458DBCFB4BDE50F47F39 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_70BC2EE6B4EE4032AD62F08EFCC3718D }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_16822233A13E4A89A0EBD02396F0C3AA }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F042EC1C0FC94EE494E7C2DEEDF8D9AB }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'faakenewwwsss'
+          app-name: 'fknewsappli'
           slot-name: 'Production'
           
